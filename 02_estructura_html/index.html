@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- metaetiquetas más comunes -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="esta página muestra la estructura basica de un documento HTML" />
+  <meta name="keywords" content="página,estructura,basica,HTML,HyperText,Markup,Language,web,mobile,jcomte23" />
+  <meta name="sitedomain" content="https://example.com" />
+  <meta name="organization" content="jcomte23" />
+  <meta name="author" content="Javier Cómbita Téllez" />
+  <meta name="designer" content="Javier Cómbita Téllez" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="revisit-after" content="15days" />
+  <!-- Si el navegador no soporta JS, este mensaje se mostrará al usuario -->
+  <noscript> Este sitio requiere js para funcionar </noscript>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Estructura basica</title>
+</head>
+
+<body>
+  <center>
+    <h1>Estructura basica</h1>
+  </center>
+  <p>
+    Una de las principales ventajas de <dfn>HTML5</dfn> es la inclusión de <strong>elementos semánticos o marcados
+      semánticos</strong>, que nos
+    ayudan a definir las distintas divisiones de una página web.
+  </p>
+  <p>
+    En las versiones anteriores a <dfn>HTML5</dfn> <b>se solía utilizar la etiqueta</b>
+    <code>&lt;div&gt;</code> para realizar las divisiones de una página web, pero <b>actualmente es recomendado utilizar
+      los elementos
+      semánticos</b> ya que describen claramente su propósito.
+  </p>
+  <p>
+    Como se puede observar en el esquema de la siguiente figura, mediante marcadores semánticos se puede diferenciar
+    claramente el contenido que referencia cada etiqueta.
+  </p>
+  <center>
+    <img src="../img/estructura-base-html.jpeg" alt="Estructura base HTML" srcset="" width="50%">
+    <img src="../img/estructura-etiquetas-html.png" alt="Estructura etiquetas HTML" srcset="" width="40%">
+  </center>
+
+  <h2>Estructura en codigo</h2>
+  <p>En el siguiente codigo esta la misma estructura pero en codigo</p>
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="es"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título de la WEB&lt;/title&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="title" content="Título de la WEB"&gt;
+        &lt;meta name="description" content="Descripción de la WEB"&gt;
+        &lt;link href="estilos.css" rel="stylesheet"&gt;
+        &lt;style&gt;
+            header {background-color: yellow;}
+        &lt;/style&gt;
+        &lt;script src="script.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript"&gt;
+            // Código JS
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;header&gt;
+            &lt;h1&gt;Título de la WEB&lt;/h1&gt;
+        &lt;/header&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+        &lt;main&gt;
+            &lt;section&gt;
+                &lt;article&gt;
+                    &lt;h2&gt;CONTENIDO PRINCIPAL&lt;/h2&gt;
+                    &lt;p&gt;Este es el contenido principal de mi web.&lt;/p&gt;
+                &lt;/article&gt;
+            &lt;/section&gt;
+        &lt;/main&gt;
+        &lt;aside&gt;
+            &lt;h3&gt;Testimonios&lt;/h3&gt;
+            &lt;p&gt;Me gusta mucho esta página.&lt;/p&gt;
+        &lt;/aside&gt;
+        &lt;footer&gt;
+            &lt;h4&gt;Redes sociales&lt;/h4&gt;
+            &lt;a href="#"&gt;Facebook&lt;/a&gt;
+            &lt;a href="#"&gt;Twitter&lt;/a&gt;
+            &lt;address&gt;
+                Información de contacto:
+                &lt;a href="mailto:contacto@empresa.com"&gt;contacto@empresa.com&lt;/a&gt;&lt;br&gt;
+                Teléfono: +123456789
+            &lt;/address&gt;
+        &lt;/footer&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+
+  <table border="2">
+    <thead align="center">
+      <caption>
+        <h3>Descripciones</h3>
+      </caption>
+      <tr bgcolor="#B8B8B8">
+        <th>Elemento</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>&lt;section&gt;</code></td>
+        <td>Define secciones de una web.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;nav&gt;</code></td>
+        <td>Especifica una sección que contiene un menú de navegación.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;article&gt;</code></td>
+        <td>Determina secciones de contenido.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;aside&gt;</code></td>
+        <td>Define la barra lateral de una página web.&nbsp;</td>
+      </tr>
+      <tr>
+        <td><code>&lt;h1&gt;</code> <code>&lt;h2&gt;</code> <code>&lt;h3&gt;</code> <code>&lt;h4&gt;</code>
+          <code>&lt;h5&gt;</code> <code>&lt;h6&gt;</code>
+        </td>
+        <td>Describe el tema de la sección. Disponemos de seis niveles: de h1 a h6, siendo <code>&lt;h1&gt;</code> la
+          cabecera de mayor importancia. Sólo puede existir una etiqueta <code>&lt;h1&gt;</code> en el documento.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;header&gt;</code></td>
+        <td>Determina la cabecera de una web o de un elemento.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;footer&gt;</code></td>
+        <td>Define el pie de página. También se puede utilizar para definir el pie de otros elementos.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;address&gt;</code></td>
+        <td>Especifica una sección que contiene información de contacto.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;main&gt;</code></td>
+        <td>Determina el contenido principal del documento. Solo puede existir un elemento <code>&lt;main&gt;</code> en
+          el documento.</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+</body>
+
+</html>
