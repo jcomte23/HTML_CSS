@@ -75,17 +75,85 @@
     </p>
 
     <li>
-      <em><strong>GET</strong></em>: Los datos del formulario se adjuntan a la URL como parámetros de consulta. Es la forma predeterminada si no
+      <em><strong>GET</strong></em>: Los datos del formulario se adjuntan a la URL como parámetros de consulta. Es la
+      forma predeterminada si no
       se especifica el atributo method. Es útil cuando se desea que los datos del formulario sean visibles en la URL,
       por ejemplo, al realizar búsquedas.
     </li>
     <br>
     <li>
-      <em><strong>POST</strong></em>: Los datos del formulario se envían en el cuerpo de la solicitud HTTP de manera más segura y no se muestran
+      <em><strong>POST</strong></em>: Los datos del formulario se envían en el cuerpo de la solicitud HTTP de manera más
+      segura y no se muestran
       en la URL. Es adecuado para enviar datos sensibles, como contraseñas o información personal.
     </li>
-
   </section>
+
+  <section>
+    <h2>Etiquetas para la creación de formularios</h2>
+    <p>HTML5 dispone de un gran número de elementos de formulario como puedes ver en la siguiente tabla.</p>
+    <table border="2">
+      <thead align="center">
+        <caption>
+          <h3>Etiquetas</h3>
+        </caption>
+        <tr bgcolor="#B8B8B8">
+          <th>Elemento</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td><code>&lt;form&gt;</code></td>
+          <td>Define un formulario.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;fieldset&gt;</code></td>
+          <td>Permite organizar en grupos los campos de un formulario.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;legend&gt;</code></td>
+          <td>Representa el título de un&nbsp;<code>&lt;fieldset&gt;</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;label&gt;</code></td>
+          <td>Representa el título de un elemento de control de un formulario.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;input&gt;</code></td>
+          <td>Se usa para crear controles interactivos que reciben datos del usuario.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;button&gt;</code></td>
+          <td>Representa un botón.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;select&gt;</code></td>
+          <td>Representa un elemento de control que permite la selección entre un conjunto de
+            opciones&nbsp;<code>&lt;option&gt;</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;option&gt;</code></td>
+          <td>Representa una opción en un
+            elemento&nbsp;<code>&lt;select&gt;</code>&nbsp;o&nbsp;<code>&lt;datalist&gt;</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;optgroup&gt;</code></td>
+          <td>Representa un conjunto de opciones, agrupadas lógicamente dentro de un <code>&lt;select&gt;</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;datalist&gt;</code></td>
+          <td>Se utiliza junto con la etiqueta <code>&lt;input&gt;</code> para proporcionar una lista de opciones
+            <code>&lt;option&gt;</code> que ayudan a los usuarios a seleccionar un valor mientras escriben en un campo
+            de entrada <code>&lt;input&gt;</code>.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;textarea&gt;</code></td>
+          <td>Representa una caja de edición de texto en varias líneas.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
 </body>
 
 </html>
