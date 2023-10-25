@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- metaetiquetas más comunes -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="esta página muestra la estructura basica de un documento HTML" />
+  <meta name="keywords" content="página,estructura,basica,HTML,HyperText,Markup,Language,web,mobile,jcomte23" />
+  <meta name="sitedomain" content="https://example.com" />
+  <meta name="organization" content="jcomte23" />
+  <meta name="author" content="Javier Cómbita Téllez" />
+  <meta name="designer" content="Javier Cómbita Téllez" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="revisit-after" content="15days" />
+  <!-- Si el navegador no soporta JS, este mensaje se mostrará al usuario -->
+  <noscript> Este sitio requiere js para funcionar </noscript>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Formularios</title>
+</head>
+
+<body>
+  <center>
+    <h1>Formularios</h1>
+  </center>
+  <p>
+    Los formularios son los elementos en los que se integran los botones y las áreas de texto que se utilizan para que
+    los usuarios introduzcan sus datos o que puedan elegir entre varias opciones. Veamos las etiquetas que se utilizan
+    para la <strong>creación de formularios en HTML5.</strong>
+  </p>
+  <p>
+    El principio y final de un formulario se define con las etiquetas
+    <code>&lt;form&gt;</code> y <code>&lt;/form&gt;</code>. Dentro de las etiquetas de apertura y cierre de form se
+    pueden incluir diferentes elementos que son
+    enviados para ser procesados por el servidor web. <b>Ejemplo:</b>
+  </p>
+  <pre>
+  <code>&lt;form action="procesar-registro.html" method="POST"&gt;</code>
+    <code>&lt;label for="name"&gt;</code>Name:<code>&lt;/label&gt;</code>
+    <code>&lt;input type="text" id="name" required&gt;</code>
+
+    <code>&lt;label for="email"&gt;</code>Email:<code>&lt;/label&gt;</code>
+    <code>&lt;input type="email" id="email" required&gt;</code>
+
+    <code>&lt;input type="submit" value="Submit"&gt;</code>
+  <code>&lt;/form&gt;</code>
+  </pre>
+
+  <section>
+    <h2>Atributos de la etiqueta <code>form</code></h2>
+
+    <p>El atributo action en un elemento <code>&lt;form&gt;</code> especifica la URL o ruta a la cual se enviarán los
+      datos del formulario cuando este sea enviado. Por otro
+      lado, el atributo method define el método HTTP que se utilizará para enviar los datos del formulario.
+    </p>
+
+    <li><strong>action</strong>: Puede ser una URL relativa o absoluta que indica dónde se enviarán los datos del
+      formulario para su
+      procesamiento. Por lo general, se especifica la URL de un script del lado del servidor que se encargará de
+      procesar los datos del formulario. <b>Por ejemplo:</b>
+    </li>
+    <pre>
+    <code>&lt;form action="/procesar-formulario" method="POST"&gt;</code>
+        !-- Campos del formulario --!
+    <code>&lt;/form&gt;</code>
+    </pre>
+
+    <p>En este caso, los datos del formulario se enviarán a la ruta <q>/procesar-formulario</q> en el servidor.</p>
+
+    <p>
+      El atributo method puede ser <q>GET</q> o <q>POST</q> y determina el método HTTP que se utilizará para enviar los datos del
+      formulario al servidor. La diferencia principal radica en cómo se transmiten los datos.
+    </p>
+
+  </section>
+</body>
+
+</html>
