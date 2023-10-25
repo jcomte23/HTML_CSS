@@ -69,9 +69,21 @@
     <p>En este caso, los datos del formulario se enviarán a la ruta <q>/procesar-formulario</q> en el servidor.</p>
 
     <p>
-      El atributo method puede ser <q>GET</q> o <q>POST</q> y determina el método HTTP que se utilizará para enviar los datos del
+      El atributo <em>method</em> puede ser <q>GET</q> o <q>POST</q> y determina el método HTTP que se utilizará para
+      enviar los datos del
       formulario al servidor. La diferencia principal radica en cómo se transmiten los datos.
     </p>
+
+    <li>
+      <em><strong>GET</strong></em>: Los datos del formulario se adjuntan a la URL como parámetros de consulta. Es la forma predeterminada si no
+      se especifica el atributo method. Es útil cuando se desea que los datos del formulario sean visibles en la URL,
+      por ejemplo, al realizar búsquedas.
+    </li>
+    <br>
+    <li>
+      <em><strong>POST</strong></em>: Los datos del formulario se envían en el cuerpo de la solicitud HTTP de manera más segura y no se muestran
+      en la URL. Es adecuado para enviar datos sensibles, como contraseñas o información personal.
+    </li>
 
   </section>
 </body>
