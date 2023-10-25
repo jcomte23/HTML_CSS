@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- metaetiquetas más comunes -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="esta página muestra la forma de introducir multimedia a un documento HTML" />
+  <meta name="keywords"
+    content="página,multimedia,imagen,video,audio,HTML,HyperText,Markup,Language,web,mobile,jcomte23" />
+  <meta name="sitedomain" content="https://example.com" />
+  <meta name="organization" content="jcomte23" />
+  <meta name="author" content="Javier Cómbita Téllez" />
+  <meta name="designer" content="Javier Cómbita Téllez" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+  <meta name="revisit-after" content="15days" />
+  <!-- Si el navegador no soporta JS, este mensaje se mostrará al usuario -->
+  <noscript> Este sitio requiere js para funcionar </noscript>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Contenido incrustado</title>
+</head>
+
+<body>
+  <center>
+    <h1>Contenido incrustado</h1>
+  </center>
+  <p>
+    El contenido incrustado se utiliza para mostrar recursos externos como,
+    por ejemplo, mapas, previsiones meteorológicas, fórmulas matemáticas,
+    vídeos y audios, entre otros. Este método permite utilizar un servicio o
+    interfaz de terceros.
+  </p>
+
+  <table border="2" align="center">
+    <thead align="center">
+      <caption>
+        <h3>Etiquetas</h3>
+      </caption>
+      <tr bgcolor="#B8B8B8">
+        <th>Elemento</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody align="center">
+      <tr>
+        <td><code>&lt;img&gt;</code></td>
+        <td>Representa una imagen.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;iframe&gt;</code></td>
+        <td>
+          Representa un contexto anidado de navegación, es decir, un documento
+          HTML embebido.
+        </td>
+      </tr>
+      <tr>
+        <td><code>&lt;embed&gt;</code></td>
+        <td>
+          Representa un punto de integración para una aplicación o contenido
+          interactivo externo que por lo general no es HTML.
+        </td>
+      </tr>
+      <tr>
+        <td><code>&lt;object&gt;</code></td>
+        <td>
+          Representa un recurso externo, que será tratado como una imagen, un
+          sub-documento HTML o un recurso externo a ser procesado por un
+          plugin.
+        </td>
+      </tr>
+      <tr>
+        <td><code>&lt;video&gt;</code></td>
+        <td>Representa un vídeo.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;audio&gt;</code></td>
+        <td>Representa un sonido.</td>
+      </tr>
+      <tr>
+        <td><code>&lt;source&gt;</code></td>
+        <td>
+          Permite a autores especificar recursos multimedia alternativos para
+          los elementos multimedia como
+          &nbsp;<code>&lt;video&gt;</code>&nbsp;o&nbsp;<code>&lt;audio&gt;</code>.
+        </td>
+      </tr>
+      <tr>
+        <td><code>&lt;canvas&gt;</code></td>
+        <td>
+          Representa un área de mapa de bits en el que se pueden utilizar
+          scripts para renderizar gráficos.
+        </td>
+      </tr>
+      <tr>
+        <td><code>&lt;svg&gt;</code></td>
+        <td>Define una imagen vectorial embebida.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <h2>Etiqueta img</h2>
+
+    <p>
+      La etiqueta <code>&lt;img&gt;</code> se utiliza en HTML para incrustar
+      imágenes en una página web y estas son las principales caracteristicas:
+    </p>
+
+    <li>
+      Las imágenes pueden insertarse en distintos formatos: .jpg, .png, .svg…
+    </li>
+    <li>
+      Cuando no se indica el ancho o alto de una imagen (ni en HTML ni en CSS)
+      se incrusta con su tamaño por defecto.
+    </li>
+    <li>
+      Las imágenes SVG funcionan muy bien para logotipos, iconos, gráficos y
+      diagramas. No pierden su calidad al ampliarlas o cambiarlas de tamaño.
+      Como los archivos SVG son sólo código, tienen un tamaño reducido y se
+      pueden comprimir aún más mediante programas específicos.
+    </li>
+
+    <p>Los atributos más comunes en las etiquetas de imagen HTML son:</p>
+
+    <li><code>src</code>: Especifica la ruta o URL de la imagen.</li>
+    <li>
+      <code>alt</code>: Proporciona texto alternativo que se muestra si la
+      imagen no se puede cargar.
+    </li>
+    <li>
+      <code>title</code>: Proporciona texto descriptivo que se muestra al
+      pasar el cursor sobre la imagen.
+    </li>
+    <li>
+      <code>width</code>: Especifica el ancho de la imagen en píxeles o como
+      un porcentaje del ancho disponible.
+    </li>
+    <li>
+      <code>height</code>: Especifica la altura de la imagen en píxeles o como
+      un porcentaje de la altura disponible.
+    </li>
+    <li>
+      <code>height</code>: Especifica la altura de la imagen en píxeles o como
+      un porcentaje de la altura disponible.
+    </li>
+    <p>
+      Además, puedes ver en proyectos más antiguos el uso de los siguientes
+      atributos:
+    </p>
+    <li>
+      <code>border</code>: Especifica el ancho del borde alrededor de la
+      imagen.<mark> Ya no se utiliza, mejor usar estilos CSS.</mark>
+    </li>
+    <li>
+      <code>align</code>: especifica la alineación de la imagen con respecto
+      al texto circundante. Valores: left | right| middle| top| bottom.
+      <mark>Ya no se utiliza, mejor usar estilos CSS.</mark>
+    </li>
+    <br />
+    <br />
+    <b>Ejemplo:</b>
+    <p>
+      En el siguiente ejemplo, la imagen se carga desde el archivo
+      <q>imagen.jpg</q>. Si la imagen no se puede cargar, se mostrará el texto
+      <q>Descripción de la imagen</q>. Al pasar el cursor sobre la imagen, se
+      mostrará el texto <q>Título de la imagen</q>. La imagen tendrá un ancho
+      de 300 píxeles y una altura de 200 píxeles.
+    </p>
+    &lt;img src="imagen.jpg" alt="Descripción de la imagen" title="Título de
+    la imagen" width="300" height="200"&gt;
+    <br />
+    <img src="../img/html.png" alt="Logo HTML" loading="lazy" width="300" title="HTML" />
+  </section>
+
+  <section>
+    <h2>Etiqueta video</h2>
+
+    <p>
+      La etiqueta <code>&lt;video&gt;</code> se utiliza en HTML para incrustar
+      videos en una página web. Permite especificar la fuente del video
+      mediante el atributo "src" y proporciona controles de reproducción para
+      que los usuarios puedan reproducir, pausar, adelantar y retroceder el
+      video.
+    </p>
+
+    <table border="2">
+      <thead align="center">
+        <caption>
+          <h3>Atributos etiqueta Video</h3>
+        </caption>
+        <tr bgcolor="#B8B8B8">
+          <th>Elemento</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody align="center">
+        <tr>
+          <td><code>&lt;src&gt;</code></td>
+          <td>
+            Archivo o URL del video a reproducir. Obligatoria si no tiene
+            etiquetas dentro.
+          </td>
+        </tr>
+        <tr>
+          <td><code>&lt;width&gt;</code></td>
+          <td>Indica el tamaño de ancho del video.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;height&gt;</code></td>
+          <td>Indica el tamaño de alto del video.</td>
+        </tr>
+        <tr>
+          <td><code>&lt;autoplay&gt;</code></td>
+          <td>
+            Comienza a reproducir el video automáticamente. OJO, está sujeto a
+            normas del navegador.
+          </td>
+        </tr>
+        <tr>
+          <td><code>&lt;loop&gt;</code></td>
+          <td>
+            Vuelve a iniciar el video cuando finaliza su reproducción (en
+            bucle).
+          </td>
+        </tr>
+        <tr>
+          <td><code>&lt;muted&gt;</code></td>
+          <td>
+            Establece que el video se reproduzca con sonido muteado
+            (silenciado).
+          </td>
+        </tr>
+        <tr>
+          <td><code>&lt;controls&gt;</code></td>
+          <td>
+            Muestra los controles de reproducción (por defecto no se
+            muestran).
+          </td>
+        </tr>
+        <tr>
+          <td><code>&lt;playsinline&gt;</code></td>
+          <td>
+            Reproduce el video en línea, es decir, en su área de reproducción.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <video src="../video/HTML_bien_explicado.mp4" width="540" height="360" loading="lazy" controls loop muted
+      playsinline autoplay>
+      Tu navegador no admite la reproducción de video.
+    </video>
+    <br />
+    <br />
+    <b>Ejemplo:</b>
+    <pre>
+      <code>&lt;video src="../video/HTML_bien_explicado.mp4" width="540" height="360" controls loop muted playsinline autoplay&gt;</code>
+        Tu navegador no admite la reproducción de video.
+      <code>&lt;/video&gt;</code>
+    </pre>
+  </section>
+
+  <section>
+    <h2>Etiqueta audio</h2>
+
+    <p>
+      La etiqueta <code>&lt;audio&gt;</code> se utiliza en HTML para incrustar
+      archivos de audio en una página web. Permite especificar la fuente del
+      archivo de audio mediante el atributo "src" y proporciona controles de
+      reproducción para que los usuarios puedan escuchar el audio
+    </p>
+    <audio src="../audio/audio.mp3" controls loading="lazy"></audio>
+    <br />
+    <b>Ejemplo:</b>
+    <pre>
+      <code>&lt;audio src="../audio/audio.mp3" controls loading="lazy"&gt;</code><code>&lt;/audio&gt;</code>
+    </pre>
+  </section>
+
+  <section>
+    <h2>Etiqueta iframe</h2>
+    <p>
+      la etiqueta <code>&lt;iframe&gt;</code> es un elemento HTML que se
+      utiliza para incrustar contenido de otros sitios web directamente en una
+      página web. Este elemento es muy versátil y permite la inserción de
+      diversos tipos de contenido, como videos, mapas y páginas web externas,
+      dentro de la página principal. Aquí tienes una descripción más detallada
+      de cómo funciona y para qué se utiliza.
+    </p>
+    <h3>usos mas comunes:</h3>
+    <li><strong>Inserción de videos</strong>: Una de las aplicaciones más
+      comunes es la incorporación de videos de servicios como YouTube, Vimeo o
+      Dailymotion. Al incluir un <code>&lt;iframe&gt;</code> con el código de
+      inserción del video, los visitantes de tu sitio web pueden ver el video
+      directamente en tu página.
+    </li>
+    <li><strong>Integración de mapas</strong>: Puedes usar
+      <code>&lt;iframe&gt;</code> para insertar mapas interactivos de
+      servicios como Google Maps. Esto permite a los usuarios ver ubicaciones
+      específicas, buscar direcciones y obtener direcciones para llegar a un
+      lugar.
+    </li>
+    <li><strong>Inclusión de contenido externo</strong>: Puedes utilizar
+      <code>&lt;iframe&gt;</code> para mostrar contenido de otros sitios web,
+      como widgets de redes sociales, presentaciones de diapositivas,
+      encuestas, formularios y mucho más. Esto permite que tu página web
+      acceda y muestre contenido de terceros de manera integrada.
+    </li>
+    <li><strong>Visualización de contenido web embebido</strong>: Si deseas
+      mostrar una página web completa dentro de la tuya (a menudo utilizada
+      para incrustar contenido de blogs, noticias o sitios relacionados),
+      puedes utilizar <code>&lt;iframe&gt;</code> para lograrlo.
+    </li>
+    <br>
+    <b>Ejemplo:</b>
+    <pre>
+      <code>&lt;iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7932.667449544543!2d-75.5835768!3d6.219648900000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1698232808595!5m2!1ses!2sco"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;</code>
+      <code>&lt;/iframe&gt;</code>
+    </pre>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7932.667449544543!2d-75.5835768!3d6.219648900000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1698232808595!5m2!1ses!2sco"
+      width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+</body>
+
+</html>

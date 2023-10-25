@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- metaetiquetas más comunes -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="esta página es una introducción a HTML" />
+    <meta
+      name="keywords"
+      content="página,introducción, HTML,HyperText,Markup,Language,web,mobile,jcomte23"
+    />
+    <meta name="sitedomain" content="https://example.com" />
+    <meta name="organization" content="jcomte23" />
+    <meta name="author" content="Javier Cómbita Téllez" />
+    <meta name="designer" content="Javier Cómbita Téllez" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <!-- Si el navegador no soporta JS, este mensaje se mostrará al usuario -->
+    <noscript> Este sitio requiere js para funcionar </noscript>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Introducción</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>HTML</h1>
+    </center>
+    <p>
+      <strong>HTML</strong> (<i>HyperText Markup Language</i>) es el lenguaje de
+      marcado estándar utilizado para crear páginas web. Proporciona la
+      estructura y el contenido de una página web, definiendo los elementos y su
+      diseño. <dfn>HTML</dfn> utiliza etiquetas para marcar diferentes partes
+      del contenido, como encabezados, párrafos, enlaces, imágenes, tablas,
+      formularios, entre otros.
+    </p>
+    <p>
+      Estas etiquetas permiten a los navegadores web
+      <b>interpretar y renderizar correctamente el contenido de la página.</b>
+      <dfn>HTML</dfn> es fundamental en el desarrollo web y es la base para la
+      creación de sitios web interactivos y accesibles.
+    </p>
+
+    <section>
+      <h2>Elementos estructurales</h2>
+      <p>
+        La estructura básica de un documento <dfn>HTML</dfn> consta de varios
+        elementos que definen la estructura y el contenido de una página web.
+      </p>
+
+      <table border="2">
+        <thead align="center">
+          <caption>
+            <h3>Estructuras HTML</h3>
+          </caption>
+          <tr bgcolor="#B8B8B8">
+            <th>Elemento</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody align="center">
+          <tr>
+            <td><code>&lt;!DOCTYPE html&gt;</code></td>
+            <td>Indica que el documento está bajo el estándar de HTML5.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;html&gt;</code></td>
+            <td>
+              Representa la raíz de un documento <dfn>HTML</dfn> y sirve como
+              contenedor para los demás elementos <dfn>HTML</dfn>, como
+              <code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>. El atributo
+              lang especifica el idioma del documento, lo que ayuda con la
+              accesibilidad y el SEO.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;head&gt;</code></td>
+            <td>
+              En su interior se incluye la colección de metadatos sobre el
+              documento, los enlaces a scripts y hojas de estilo.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;title&gt;</code></td>
+            <td>
+              Representa el título del documento. Se muestra en la barra
+              superior del navegador o en las pestañas de página.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;link&gt;</code></td>
+            <td>Enlaza documentos externos, por ejemplo CSS.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;meta&gt;</code></td>
+            <td>
+              Define los metadatos que no pueden ser definidos usando otro
+              elemento <dfn>HTML</dfn>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;style&gt;</code></td>
+            <td>Usada para escribir CSS interno.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;script&gt;</code></td>
+            <td>
+              Define un script interno o un enlace hacia un script externo de
+              JavaScript.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;body&gt;</code></td>
+            <td>
+              Recoge todo el contenido que puede ver un usuario de un documento
+              <dfn>HTML</dfn>. Sólo puede existir un elemento
+              <code>&lt;body&gt;</code> en el documento.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Etiquetas vacías o de autocierre en HTML</h2>
+      <p>
+        Las etiquetas vacías o de autocierre en <dfn>HTML</dfn> son aquellas que
+        no
+        <b
+          >contienen contenido entre una etiqueta de apertura y una de
+          cierre.</b
+        >
+        Estas etiquetas se cierran automáticamente dentro de la etiqueta de
+        apertura. Algunos ejemplos de etiquetas vacías o de autocierre son:
+      </p>
+
+      <li><code>&lt;br&gt;</code>: Salto de línea o línea de quiebre.</li>
+      <li><code>&lt;hr&gt;</code>: Línea horizontal.</li>
+      <li><code>&lt;img&gt;</code>: Imagen.</li>
+      <li><code>&lt;input&gt;</code>: Campo de entrada de datos.</li>
+      <li><code>&lt;meta&gt;</code>: Metadatos del documento.</li>
+      <li><code>&lt;link&gt;</code>: Enlace a un recurso externo.</li>
+      <li><code>&lt;wbr&gt;</code>: Salto de línea sugerido.</li>
+      <li><code>&lt;area&gt;</code>: Área de un mapa de imagen.</li>
+      <li><code>&lt;base&gt;</code>: URL base para enlaces relativos.</li>
+    </section>
+
+    <section>
+      <h2>Etiquetas de contenido y texto</h2>
+      <p>
+        En este apartado vamos a ver dos tipos de
+        <strong>etiquetas HTML</strong>: las etiquetas que agrupan el
+        <strong>contenido</strong> y las etiquetas que contienen fragmentos de
+        <strong>texto</strong> (dan significado a esas palabras o fragmentos).
+      </p>
+      <table align="center" border="2">
+        <thead>
+          <caption>
+            <h3>Estructuras de contenido</h3>
+          </caption>
+          <tr bgcolor="#B8B8B8">
+            <th>Elemento</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody align="center">
+          <tr>
+            <td><code>&lt;p&gt;</code></td>
+            <td>Define una parte que debe mostrarse como un párrafo.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;hr&gt;</code></td>
+            <td>
+              Representa un cambio temático entre párrafos. Suele representar
+              una línea horizontal.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;pre&gt;</code></td>
+            <td>
+              Indica que su contenido esta preformateado y que este formato debe
+              ser preservado.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;blockquote&gt;</code></td>
+            <td>Representa un contenido citado desde otra fuente.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;ol&gt;</code></td>
+            <td>Especifica una lista ordenada de elementos.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;ul&gt;</code></td>
+            <td>Determina una lista de elementos sin orden.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;li&gt;</code></td>
+            <td>Define un elemento de una lista.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;dl&gt;</code></td>
+            <td>
+              Especifica una lista de definiciones, es decir, una lista de
+              términos y sus definiciones asociadas.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;dt&gt;</code></td>
+            <td>
+              Representa un término definido por el
+              siguiente&nbsp;<code>&lt;dd&gt;</code>.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;dd&gt;</code></td>
+            <td>Indica la definición de los términos listados antes que él.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;figure&gt;</code></td>
+            <td>
+              Establece una figura ilustrada como parte &nbsp;del documento.
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;figcaption&gt;</code></td>
+            <td>Representa la leyenda de una figura.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;div&gt;</code></td>
+            <td>
+              Representa un contenedor genérico sin ningún significado especial.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br />
+
+      <table align="center" border="2">
+        <thead>
+          <caption>
+            <h3>Estructuras de texto</h3>
+          </caption>
+          <tr bgcolor="#B8B8B8">
+            <th>Elemento</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+          </tr>
+        </thead>
+        <tbody align="center">
+          <tr>
+            <td><code>&lt;a&gt;</code></td>
+            <td>Representa un&nbsp;<em>hiperenlace</em>.</td>
+            <td>
+              <a href="https://www.youtube.com/" target="_blank">Youtube.com</a>
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;em&gt;</code></td>
+            <td>
+              Especifica un texto&nbsp;<em>enfatizado</em> respecto a la frase
+              que lo contiene..
+            </td>
+            <td>hola <em>Coder</em></td>
+          </tr>
+          <tr>
+            <td><code>&lt;strong&gt;</code></td>
+            <td>Establece un texto importante.</td>
+            <td><strong>linux</strong></td>
+          </tr>
+          <tr>
+            <td><code>&lt;small&gt;</code></td>
+            <td>
+              Define un comentario aparte, es decir, textos de políticas de
+              responsabilidad o una nota de derechos de autoría, que no son
+              esenciales para la comprensión del documento.
+            </td>
+            <td><small>Nota de derechos</small></td>
+          </tr>
+          <tr>
+            <td><code>&lt;s&gt;</code></td>
+            <td>
+              Representa contenido que no es exacto, tiene el estilo tachado.
+            </td>
+            <td><s>error</s></td>
+          </tr>
+          <tr>
+            <td><code>&lt;cite&gt;</code></td>
+            <td>Indica el título de una obra.</td>
+            <td><cite>Este es el título de una obra</cite></td>
+          </tr>
+          <tr>
+            <td><code>&lt;q&gt;</code></td>
+            <td>Representa una cita textual entre comillas.</td>
+            <td><q>Representa una cita textual entre comillas.</q></td>
+          </tr>
+          <tr>
+            <td><code>&lt;dfn&gt;</code></td>
+            <td>Sirve para marcar el término que se quiere definir.</td>
+            <td>El <dfn>HTML</dfn> es un lenguaje de marcado.</td>
+          </tr>
+          <tr>
+            <td><code>&lt;abbr&gt;</code></td>
+            <td>
+              Envuelve un texto que al pasar el puntero por encima despliega un
+              tooltip. El contenido del tooltip se detalla mediante el atributo
+              title.
+            </td>
+            <td>
+              Pasa puntero=><abbr title="HyperText Markup Language">HTML</abbr>
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;time&gt;</code></td>
+            <td>Determina un valor de fecha y hora.</td>
+            <td><time>15s</time></td>
+          </tr>
+          <tr>
+            <td><code>&lt;code&gt;</code></td>
+            <td>Establece un código de programación.</td>
+            <td><code>h1{color:red;}</code></td>
+          </tr>
+          <tr>
+            <td><code>&lt;sub&gt;</code><code>&lt;sup&gt;</code></td>
+            <td>Establece un subíndice y un superíndice respectivamente.</td>
+            <td><sub>sub</sub> normal <sup>sup</sup></td>
+          </tr>
+          <tr>
+            <td><code>&lt;i&gt;</code></td>
+            <td>
+              Muestra el texto marcado con un estilo en cursiva o itálica.
+            </td>
+            <td><i>python</i></td>
+          </tr>
+          <tr>
+            <td><code>&lt;b&gt;</code></td>
+            <td>
+              Representa el texto marcado con un estilo en negrita sin
+              importancia destacable (fines utilitarios)
+            </td>
+            <td><b>hola</b> mundo</td>
+          </tr>
+          <tr>
+            <td><code>&lt;u&gt;</code></td>
+            <td>Muestra el texto subrayado.</td>
+            <td><u>Napoleon</u></td>
+          </tr>
+          <tr>
+            <td><code>&lt;mark&gt;</code></td>
+            <td>Representa un texto marcado o resaltado.</td>
+            <td>hola <mark>mundo</mark></td>
+          </tr>
+          <tr>
+            <td><code>&lt;span&gt;</code></td>
+            <td>
+              Especifica texto en línea. Sirve para aplicar estilo al texto o
+              agrupar elementos en línea.
+            </td>
+            <td><span>texto</span></td>
+          </tr>
+          <tr>
+            <td><code>&lt;br&gt;</code></td>
+            <td>Inserta un salto de línea.</td>
+            <td>
+              linea1 <br />
+              linea2
+            </td>
+          </tr>
+          <tr>
+            <td><code>&lt;wbr&gt;</code></td>
+            <td>
+              Indica una oportunidad de salto de línea, es decir, un punto
+              sugerido donde el texto puede ser dividido para mejorar su
+              legibilidad.
+            </td>
+            <td>https://github.com<wbr />/jcomte23<wbr />/HTML_CSS</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
